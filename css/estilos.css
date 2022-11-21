@@ -262,6 +262,10 @@ form {
     padding: 0.5rem;
 }
 
+.carousel-item{
+    height: 850px;
+}
+
 .carousel-inner img {
     width: 100%;
 }
