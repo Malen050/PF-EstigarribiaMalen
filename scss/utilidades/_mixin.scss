@@ -1,0 +1,130 @@
+// mixin grid
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}    
+
+
+// mixin flex
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+// mixin menu
+
+@mixin menu{
+    background-color: $box;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+    transform: scale(0.8);
+    color: black; 
+}
+
+// mdq
+
+@mixin mobile{
+    @media only screen and (min-width: 0px) and (max-width: 768px){
+         /* estilos de header del index */
+    
+    header img{
+        width: 400px;
+    }
+  
+    /* estilos de main del index */
+    .index{
+        display: none;  
+    }
+  
+    .img-main{
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+  
+    .img-1{
+        max-width: 100%;  
+    }
+  
+    .img-2{
+        max-width: 100%;
+    }
+  
+    .img-3{
+        max-width: 100%;
+    }
+  
+    /* estilos del maps */   
+  
+    .maps{
+        padding: 1rem;
+        margin: 0.5rem;
+        width: 350px;
+        height: 350px;
+    }
+  
+    /* estilos productos */
+  
+    .contenedor-productos{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 2rem;
+        padding: 3rem;
+    }
+  
+    /* estilos de como comprar*/
+  
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        align-items: center;
+    }
+  
+    /* estilos de contactos */
+  
+    form{
+        width: 90%;
+        margin: 0 auto;  
+    }
+  
+    .img-contactos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+  }
+}
+
+// mdq tablet
+
+@mixin tablet{
+    @media only screen and (min-width:768px) and (max-width:1024px){
+  
+        /* estilos productos */
+      
+        .contenedor-productos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 2rem;
+            padding: 3rem;
+        }
+      }
+}
+
+// mdq
+
+@mixin mq{
+    @media screen and (min-width: 760px){
+        /* estilos del main */
+        .img-main{
+            display: none;
+        }
+      }
+}
