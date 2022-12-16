@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 * {
   margin: 0;
@@ -78,8 +79,20 @@ main .texto {
   margin-top: 1rem;
   margin-left: 1rem; }
 
-.ubicacion {
-  text-align: center; }
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .flex section .horarios {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic; }
+  .flex section img {
+    width: 340px;
+    height: 340px; }
 
 /* estilos de contenedor de productos.html*/
 .contenedor-productos {
@@ -238,6 +251,17 @@ div p {
     margin: 0.5rem;
     width: 350px;
     height: 350px; }
+  /* estilos de ubicación */
+  .flex {
+    display: flex;
+    flex-direction: column; }
+    .flex section .horarios {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      margin-left: 1rem;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic; }
   /* estilos productos */
   .contenedor-productos {
     display: flex;

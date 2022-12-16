@@ -64,6 +64,24 @@
         width: 350px;
         height: 350px;
     }
+
+    /* estilos de ubicación */
+    
+.flex{
+    display: flex;
+    flex-direction: column;
+
+    section{
+        .horarios{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;   
+    }
+  }
+}
   
     /* estilos productos */
   
